@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Miftaqhudin Rifai — Informatics student, technology enthusiast.">
+  <title>Miftaqhudin Rifai | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= INTRO SCREEN ================= -->
+  <section class="intro" id="intro">
+    <div class="intro-grid"></div>
+    <div class="intro-glow intro-glow--a"></div>
+    <div class="intro-glow intro-glow--b"></div>
+
+    <div class="intro-content">
+      <div class="intro-monogram">MR<span>.</span></div>
+      <p class="intro-kicker">PERSONAL PORTFOLIO</p>
+      <h1 class="intro-title">Building the future,<br><span>one line of code</span> at a time.</h1>
+      <p class="intro-description">
+        Miftaqhudin Rifai — Informatics student exploring software development,
+        web technologies, and digital innovation.
+      </p>
+      <button id="enterButton" class="btn btn--primary intro-enter">
+        ENTER PORTFOLIO
+        <span class="btn-arrow">↗</span>
+      </button>
+    </div>
+
+    <div class="intro-footer">
+      <span>MR. — PORTFOLIO</span>
+      <span>EST. 2026</span>
+    </div>
+  </section>
+
+  <!-- ================= MAIN WEBSITE ================= -->
+  <div id="mainContent" hidden>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <a href="#home" class="logo">MR<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <p class="section-label"><span class="label-line"></span> HELLO, WORLD — I'M</p>
+        <h1 class="hero-title">
+          Miftaqhudin<br><span>Rifai.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Informatics Student · Technology Enthusiast
+        </p>
+        <p class="hero-text">
+          Focused on turning ideas into clean, functional digital experiences —
+          documenting my learning journey one project at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary">View My Work <span class="btn-arrow">↗</span></a>
+          <a href="#about" class="btn btn--ghost">About Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2026</span>
+            <span class="stat-label">Starting the journey</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Areas exploring</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb-stage">
+          <div class="orb-stage__aura" aria-hidden="true"></div>
+
+          <svg class="orb-network" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+            <g class="orb-network__lines">
+              <path d="M58 140 L126 84 L300 96 L344 170 L300 320 L150 326 L74 268 Z" />
+              <path class="orb-network__chord" d="M58 140 L300 320" />
+              <path class="orb-network__chord" d="M344 170 L74 268" />
+            </g>
+            <g class="orb-network__nodes">
+              <circle cx="58" cy="140" r="2.6" />
+              <circle cx="126" cy="84" r="1.9" />
+              <circle cx="300" cy="96" r="2.3" />
+              <circle cx="344" cy="170" r="1.9" />
+              <circle cx="300" cy="320" r="2.3" />
+              <circle cx="150" cy="326" r="1.9" />
+              <circle cx="74" cy="268" r="2.4" />
+            </g>
+          </svg>
+
+          <div class="orb-system" aria-hidden="true">
+            <div class="orb-orbit orb-orbit--a">
+              <div class="orb-ring orb-ring--a">
+                <span class="orb-sat"></span>
+              </div>
+            </div>
+            <div class="orb-orbit orb-orbit--b">
+              <div class="orb-ring orb-ring--b">
+                <span class="orb-sat orb-sat--b"></span>
+              </div>
+            </div>
+            <div class="orb-orbit orb-orbit--c">
+              <div class="orb-ring orb-ring--c"></div>
+            </div>
+          </div>
+
+          <div class="orb-wrap">
+            <div class="orb-tilt" id="orbTilt">
+              <div class="orb">
+                <span class="orb-grid" aria-hidden="true"></span>
+                <span class="orb-core" aria-hidden="true">MR</span>
+                <span class="orb-scan" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="orb-particles" aria-hidden="true">
+            <span class="orb-particle" style="--x: 16%; --y: 30%; --t: 0.4; --d: 0s; --s: 0.8"></span>
+            <span class="orb-particle" style="--x: 82%; --y: 24%; --t: 1.1; --d: 1.2s; --s: 0.6"></span>
+            <span class="orb-particle" style="--x: 88%; --y: 62%; --t: 0.2; --d: 2.4s; --s: 0.9"></span>
+            <span class="orb-particle" style="--x: 12%; --y: 68%; --t: 1.6; --d: 3.1s; --s: 0.7"></span>
+            <span class="orb-particle" style="--x: 32%; --y: 12%; --t: 0.8; --d: 4.3s; --s: 0.5"></span>
+            <span class="orb-particle" style="--x: 68%; --y: 86%; --t: 1.3; --d: 5.2s; --s: 0.65"></span>
+            <span class="orb-particle" style="--x: 46%; --y: 92%; --t: 0.6; --d: 2.8s; --s: 0.55"></span>
+            <span class="orb-particle" style="--x: 74%; --y: 44%; --t: 1.9; --d: 6.4s; --s: 0.75"></span>
+          </div>
+
+          <span class="orb-label orb-label--tl">● Available</span>
+          <span class="orb-label orb-label--tr">MR / IDENTITY</span>
+
+          <code class="orb-code" aria-hidden="true">const identity = { name: "MR", focus: "build · learn" };</code>
+
+          <div class="orb-caption">
+            <span class="orb-caption__name">Miftaqhudin Rifai</span>
+            <span class="orb-caption__role">Informatics Student</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-head">
+        <p class="section-label"><span class="label-line"></span> 01 / ABOUT ME</p>
+        <h2 class="section-title">Learning today.<br>Building tomorrow.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I'm an <strong>Informatics student</strong> with a deep curiosity for how
+            technology shapes the way we live, learn, and connect. My journey is driven
+            by a simple belief: that consistent learning and hands-on building are the
+            fastest paths to growth.
+          </p>
+          <p>
+            This space is where I document that journey — from the first lines of code
+            to the projects I'm proud of, and everything in between.
+          </p>
+        </div>
+
+        <div class="about-rail">
+          <div class="rail-card">
+            <span class="rail-index">EDUCATION</span>
+            <h3>Informatics Student</h3>
+            <p>Currently pursuing a degree in Informatics — studying programming, systems, and the foundations of modern software.</p>
+          </div>
+          <div class="rail-card">
+            <span class="rail-index">INTERESTS</span>
+            <h3>Where my attention goes</h3>
+            <div class="tag-row">
+              <span class="tag">Web Development</span>
+              <span class="tag">Programming</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Internet of Things</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="section-label"><span class="label-line"></span> 02 / SKILLS</p>
+          <h2 class="section-title">What I'm exploring.</h2>
+        </div>
+        <p class="section-note">A snapshot of the areas I'm actively learning and building in.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card skill-card--feature">
+          <div class="skill-icon">◈</div>
+          <h3>Web Development</h3>
+          <p>Crafting responsive interfaces with HTML, CSS, and JavaScript — the foundation of everything I build.</p>
+          <div class="skill-bar"><span style="width: 75%"></span></div>
+          <span class="skill-level">Core focus</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">▤</div>
+          <h3>Programming</h3>
+          <p>Learning to think in logic and structure — solving problems with clean, readable code.</p>
+          <div class="skill-bar"><span style="width: 65%"></span></div>
+          <span class="skill-level">Growing</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">⬡</div>
+          <h3>Cybersecurity</h3>
+          <p>Understanding how systems are protected — and how to think like someone trying to break them.</p>
+          <div class="skill-bar"><span style="width: 45%"></span></div>
+          <span class="skill-level">Exploring</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">◎</div>
+          <h3>Internet of Things</h3>
+          <p>Connecting the physical and digital worlds — sensors, devices, and the data between them.</p>
+          <div class="skill-bar"><span style="width: 40%"></span></div>
+          <span class="skill-level">Exploring</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="section-label"><span class="label-line"></span> 03 / PROJECTS</p>
+          <h2 class="section-title">Selected works.</h2>
+        </div>
+        <p class="section-note">Things I've built and am building — documented as I go.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-preview project-preview--portfolio">
+            <span class="preview-monogram">MR<span>.</span></span>
+            <span class="preview-tag">PORTFOLIO</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-index">PROJECT 01</span>
+              <span class="project-status project-status--progress">IN PROGRESS</span>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p>A personal website built with HTML, CSS, and JavaScript — this very site you're viewing.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview project-preview--lab">
+            <span class="preview-monogram">⌘</span>
+            <span class="preview-tag">LAB</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-index">PROJECT 02</span>
+              <span class="project-status project-status--progress">IN PROGRESS</span>
+            </div>
+            <h3>Frontend Lab</h3>
+            <p>Daily UI/UX experiments — micro-interactions, layouts, and design systems I'm practicing.</p>
+            <div class="project-tech">
+              <span>UI/UX</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview project-preview--next">
+            <span class="preview-monogram">+</span>
+            <span class="preview-tag">NEXT</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-index">PROJECT 03</span>
+              <span class="project-status project-status--planned">PLANNED</span>
+            </div>
+            <h3>Next Build</h3>
+            <p>A larger project currently in the planning phase — more details coming soon.</p>
+            <div class="project-tech">
+              <span>TBA</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <p class="section-label"><span class="label-line"></span> 04 / CONTACT</p>
+        <h2 class="section-title">Let's connect.</h2>
+        <p class="section-note">Have an idea, a question, or just want to say hi? My inbox is open.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+        <div class="field">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="john@example.com" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number <em>(optional)</em></label>
+          <input type="tel" id="phone" placeholder="+62 ...">
+        </div>
+        <div class="field field--full">
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary field--full">Send Message <span class="btn-arrow">↗</span></button>
+        <p id="formNotice" class="form-notice"></p>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-copy">© <span id="year"></span> Miftaqhudin Rifai. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
